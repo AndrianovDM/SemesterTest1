@@ -35,3 +35,11 @@ void modifiedArray(string[] arr)
     }
     Console.Write(" ]");
  }
+
+Console.WriteLine("Input size array: ");
+int size = Convert.ToInt32(Console.ReadLine());
+string[] array = CreateArray(size);
+Console.WriteLine("Input array: ");
+PrintArray(array);
+Console.WriteLine("New array where (element <= 3): ");
+modifiedArray(array);
