@@ -18,3 +18,20 @@ string[] CreateArray(int size)
     }
     return arr;
 }
+
+void modifiedArray(string[] arr)
+ {  
+    int count = 0;
+    string[] arrMod = new string[arr.Length];
+    Console.Write("[ ");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if(arr[i].Length <= 3)
+        {
+        arrMod[count] = arr[i];
+        Console.Write(arrMod[count]+ ',');
+        count++;
+        }
+    }
+    Console.Write(" ]");
+ }
